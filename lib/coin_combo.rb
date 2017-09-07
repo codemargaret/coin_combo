@@ -1,12 +1,16 @@
 #! usr/bin/env ruby
 class Money
+  def initialize
+  end
   # def initialize (myNum)
   #   @myNum = myNum
   # end
-  def coin_combo()
-    1+4
-    # return 25
-    # @myNum
+  def coin_combo(a)
+    my_array = [a]
+    my_array.map do
+      (a + 4)
+    end
+
     # my_array = [@myNum]
     # my_array.map do |myNum|
     # Float((myNum)*(0.01))
