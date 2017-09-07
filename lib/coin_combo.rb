@@ -8,7 +8,7 @@ class Money
   def coin_combo(a)
     my_array = [a]
     my_array.map do
-      (a + 4)
+      Float((a)*(0.01))
     end
 
     # my_array = [@myNum]
