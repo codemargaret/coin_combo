@@ -15,40 +15,36 @@ class Money
   coins.key(a)
   end
 
-  def quarters (q)
+  def make_change (yourchg)
     count_q = 0
-    while (q >= 25) do
-      q = (q - 25)
-      count_q += 1
-    end #do
-    count_q
-  end #while
-
-  def dimes (d)
     count_d = 0
-    while (d >= 10) do
-      d = (d - 10)
-      count_d += 1
-    end #do
-    count_d
-  end #while
-
-  def nickels (n)
     count_n = 0
-    while (n >= 5) do
-      n = (n - 5)
-      count_n += 1
-    end #do
-    count_n
-  end #while
-
-  def pennies (p)
     count_p = 0
-    while (p >= 1) do
-      p = (p - 1)
-      count_p += 1
-    end #do
-    count_p
-  end #while
+    total = []
 
+    while (yourchg >= 25)
+      yourchg = (yourchg - 25)
+      count_q += 1
+    end #while
+
+    while (yourchg >= 10)
+      yourchg = (yourchg - 10)
+      count_d += 1
+    end #while
+
+    while (yourchg >= 5)
+      yourchg = (yourchg - 5)
+      count_n += 1
+    end #while
+
+    while (yourchg >= 1)
+      yourchg = (yourchg - 1)
+      count_p += 1
+    end #while
+    total.push(count_q)
+    total.push(count_d)
+    total.push(count_n)
+    total.push(count_p)
+    total
+  end#def
 end #class
