@@ -15,6 +15,15 @@ class Money
   coins.key(a)
   end
 
+  def quarters (q)
+    count_q = 1
+    while (q > 25) do
+      q = (q - 25)
+      count_q += 1
+    end #do
+    count_q
+  end #while
+
     # return my_array[0]
   #  end
-end
+end #class

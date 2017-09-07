@@ -13,7 +13,7 @@ describe('#coin_combo') do
     expect(newmoney.coins(25)).to(eq("quarter"))
   end
 
-  # it ("returns 4 quarters for one dollar") do
-  #   expect(newmoney.change(1)).to(eq("four quarter"))
-  # end
+  it ("returns 4 quarters for one dollar") do
+    expect(newmoney.quarters(100)).to(eq(4))
+  end
 end
