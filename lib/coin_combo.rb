@@ -2,16 +2,16 @@
 class Money
   # def initialize
   # end
-  def change(a)
-    Float((a)*(0.01))
+  def change_result(a)
+    Float((a)*(1.00))
   end
 
   def coins (a)
   coins = Hash.new()
   coins.store("quarter", 25)
   coins.store("dime", 10)
-  coins.store("nickel", 5)
-  coins.store("penny", 1)
+  coins.store("nickel", 05)
+  coins.store("penny", 01)
   coins.key(a)
   end
 
@@ -21,7 +21,7 @@ class Money
     count_n = 0
     count_p = 0
     total = []
-
+    # yourchg *100
     while (yourchg >= 25)
       yourchg = (yourchg - 25)
       count_q += 1
@@ -32,13 +32,13 @@ class Money
       count_d += 1
     end #while
 
-    while (yourchg >= 5)
-      yourchg = (yourchg - 5)
+    while (yourchg >= 05)
+      yourchg = (yourchg - 05)
       count_n += 1
     end #while
 
-    while (yourchg >= 1)
-      yourchg = (yourchg - 1)
+    while (yourchg >= 01)
+      yourchg = (yourchg - 01)
       count_p += 1
     end #while
     total.push(count_q)
