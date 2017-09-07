@@ -1,20 +1,20 @@
 #! usr/bin/env ruby
 class Money
-  def initialize
-  end
-  # def initialize (myNum)
-  #   @myNum = myNum
+  # def initialize
   # end
-  def coin_combo(a)
-    my_array = [a]
-    my_array.map do
-      Float((a)*(0.01))
-    end
-
-    # my_array = [@myNum]
-    # my_array.map do |myNum|
-    # Float((myNum)*(0.01))
+  def change(a)
+    Float((a)*(0.01))
   end
+
+  def coins (a)
+  coins = Hash.new()
+  coins.store("quarter", 25)
+  coins.store("dime", 10)
+  coins.store("nickel", 5)
+  coins.store("penny", 1)
+  coins.key(a)
+  end
+
     # return my_array[0]
   #  end
 end
