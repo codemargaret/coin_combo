@@ -1,6 +1,6 @@
 # _Coin Combo_
 
-#### _A Ruby app that tells you how the smallest number of coins needed to make change, 09.07.2017_
+#### _A Ruby app that tells you the smallest number of coins needed to make change, 09.07.2017_
 
 #### By _**Margaret Berry and Sara Spink**_
 
