@@ -8,6 +8,11 @@
 * _Practice working with hashes in Ruby._
 * _Practice using while loops._
 
+## Specifications
+| Spec              | Input | Output |
+|-------------------|-------|--------|
+| Returns smallest number of coins needed to make change     | $0.47    | 1 quarter, 2 dimes, 2 pennies      |
+
 ## Setup/Installation Requirements
 _Run the following commands in Terminal:_
 
